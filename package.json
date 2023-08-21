@@ -1,0 +1,25 @@
+{
+  "name": "decohack-lang",
+  "displayName": "Decohack VSCode Support",
+  "description": "Syntax highlighting for decohack",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "decohack",
+      "aliases": ["decohack", "Decohack"],
+      "extensions": [".dh"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "decohack",
+      "scopeName": "source.decohack",
+      "path": "./syntaxes/deco.plist"
+    }]
+  }
+}
