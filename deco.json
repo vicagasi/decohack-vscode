@@ -1,0 +1,12 @@
+{
+    "snippets":[
+        {
+            "tag":"include_gen",
+            "text":"#include <doom19>\n#include <friendly>\n\n"
+        },
+        {
+            "tag":"weapon_gen",
+            "text":"weapon 1 free states\nweapon 1 \"Gun\"\n{\n    ammotype 0\n    clear states\n    states\n    {\n        Ready:\n           Loop\n        Deselect:\n           Loop\n        Select:\n           Loop\n        Fire:\n           Goto Ready\n        Flash:\n           Goto LightDone\n   }\n}"
+        }
+    ]
+}

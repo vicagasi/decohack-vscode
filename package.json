@@ -6,6 +6,8 @@
   "engines": {
     "vscode": "^1.81.0"
   },
+  "activationEvents": [],
+  "main": "./extension.js",
   "categories": [
     "Programming Languages"
   ],
@@ -20,6 +22,16 @@
       "language": "decohack",
       "scopeName": "source.decohack",
       "path": "./syntaxes/deco.plist"
-    }]
+    }],
+    "commands": [
+      {
+        "command": "decohackplugin.includeTemplate",
+        "title": "deco_include"
+      },
+      {
+        "command": "decohackplugin.weaponTemplate",
+        "title": "deco_weapon"
+      }
+    ]
   }
 }
