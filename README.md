@@ -14,4 +14,7 @@ Decohack syntax highlighting
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
+
+- Indev Release
+- Added Syntaxing

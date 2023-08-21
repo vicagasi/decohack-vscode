@@ -4,4 +4,5 @@ All notable changes to the "decohack-lang" extension will be documented in this 
 
 ## [0.0.1]
 
-- Indevrelease
+- Indev Release
+- Added Syntaxing
