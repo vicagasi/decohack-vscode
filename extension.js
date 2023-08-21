@@ -42,6 +42,17 @@ function activate(context) {
 		console.log('decohackplugin: weapon template loaded');
 	});
 
+	let monsterTemplate = vscode.commands.registerTextEditorCommand('decohackplugin.monsterTemplate', function (editor, edit) {
+
+		const text = decoJson["snippets"][2]["text"];
+
+		editor.selections.forEach((selection) => {
+			edit.insert(selection.active, text);
+		})
+
+		console.log('decohackplugin: monster template loaded');
+	});
+
 	context.subscriptions.push(decoTemplate);
 	context.subscriptions.push(weaponTemplate);
 }

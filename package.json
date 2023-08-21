@@ -31,6 +31,10 @@
       {
         "command": "decohackplugin.weaponTemplate",
         "title": "deco_weapon"
+      },
+      {
+        "command": "decohackplugin.monsterTemplate",
+        "title": "deco_monster"
       }
     ]
   }

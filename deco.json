@@ -6,7 +6,11 @@
         },
         {
             "tag":"weapon_gen",
-            "text":"weapon 1 free states\nweapon 1 \"Gun\"\n{\n    ammotype 0\n    clear states\n    states\n    {\n        Ready:\n           Loop\n        Deselect:\n           Loop\n        Select:\n           Loop\n        Fire:\n           Goto Ready\n        Flash:\n           Goto LightDone\n   }\n}"
+            "text":"weapon 1 free states\nweapon 1 \"Gun\"\n{\n    ammotype 0\n    clear states\n    States\n    {\n        Ready:\n           Loop\n        Deselect:\n           Loop\n        Select:\n           Loop\n        Fire:\n           Goto Ready\n        Flash:\n           Goto LightDone\n   }\n}"
+        },
+        {
+            "tag":"monster_gen",
+            "text":"thing MTF_IMP free states\nthing MTF_IMP \"Imp\"\n{\n    health 200\n    speed 12\n    clear states\n    States\n    {\n        Spawn:\n           Loop\n        See:\n           Loop\n        Melee:\n           Goto See\n        Missle:\n           Goto See\n        Pain:\n           Goto See\n        Death:\n           Stop\n        XDeath:\n           Stop\n        Raise:\n           Goto See\n   }\n}"
         }
     ]
 }
